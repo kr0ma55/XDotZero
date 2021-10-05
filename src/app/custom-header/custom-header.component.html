@@ -1,0 +1,19 @@
+<header>
+    <div class="container-fluid">
+      <div class="row tex-left">
+        <div class="col-md-3 col-sm-3 col-10 p-0 first">
+          <img src="../assets/icons/exobird.svg" class="bird-icon" alt="Kiwi standing on oval">
+        </div>
+        <div class="col-md-9 col-sm-9 d-none d-sm-block second">
+          <div class="row h-100 align-items-center text-center">
+            <div class="col" *ngFor="let item of linkList">
+              <a (click)="goTo(item)">{{item}}</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-2 d-sm-none d-md-none  d-flex justify-content-center align-self-center third text-center">
+          <app-mobile-menu></app-mobile-menu>
+        </div>
+      </div>
+    </div>
+  </header>

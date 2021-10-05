@@ -1,0 +1,65 @@
+
+.container {
+ 
+    border: 2px solid lightgrey;
+    
+  }
+  
+  .box {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    line-height: 150px;
+  }
+  
+  .giallo {
+    background-color: yellow;
+    position: relative;
+    top:20px;
+    left: 5px;
+  }
+  
+  .arancione {
+    background-color: orange;
+    position: relative;
+    top:10%;
+  }
+  
+  .rosso {
+    background-color: red;
+    position: relative;
+    
+  }
+  
+  ul {
+    list-style-type :none;
+  }
+  .mine{
+    height: 50px;
+  }
+  input{
+      border:none;
+      width: 100%!important;
+      line-height: 45px;
+  }
+
+  textarea:focus, input:focus{
+    outline: none;
+}
+.main-container{
+    width: 600px;
+ 
+
+}
+.drop-container{
+    position: relative;
+    
+    background-color: white;
+}
+.scaffholder{
+    border: 2px;
+    border-style: solid;
+    /* position: absolute; */
+    height: 68px;
+    width: 600px;
+}
