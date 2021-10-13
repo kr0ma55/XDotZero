@@ -13,58 +13,7 @@ footer{
     background: linear-gradient(90deg, hsla(337, 60%, 54%, 1) 0%, hsla(38, 89%, 50%, 1) 45%);
 }
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index:1;
-    font-family: Chalkduster, fantasy;
-    font-size: 20px;
-    color: saddlebrown;
-    background: hsla(337, 60%, 54%, 1);
 
-    background: linear-gradient(90deg, hsla(337, 60%, 54%, 1) 0%, hsla(38, 89%, 50%, 1) 45%);
-    
-}
-header .bird-icon{
-    width: 90px;
-    transform: scaleX(-1);
-}
-header .mobile-menu-icon{
-    font-size:50px;
-}
-header a:hover{
-    cursor: pointer;
-    background-color: teal;
-    border: solid 1px teal;
-    border-radius: 32px;
-}
-header .first{
-   /*  border: 1px solid red; */
-    border-right: none;
-    /* background-color:  white; */
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-
-}
-
-header .second{
-    /* border: 1px solid red; */
-    border-left:none;
-    /* background-color: white ; */
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-
-}
-
-header .third{
-   /*  border: 1px solid red; */
-    border-left:none;
-   /*  background-color: blue ; */
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-
-}
 
 .btn{
     cursor:pointer
@@ -72,6 +21,4 @@ header .third{
 .btn:hover{
 color: saddlebrown;
 }
-.card-container{
-    margin-top: 20vh;
-}
+

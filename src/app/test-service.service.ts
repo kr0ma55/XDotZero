@@ -62,5 +62,12 @@ postInfo(stat: Stat){
   console.log('jsonStat'+ jsonStat);
 }
 
+getChatMessage():Observable<Object>{
+  console.log(window);
+  return this.http.get("http://localhost:3000/home")
+  
+
+}
+
 
 }

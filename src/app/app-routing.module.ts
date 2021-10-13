@@ -9,7 +9,10 @@ const routes: Routes = [
   {path:'',redirectTo:'custom-notices', pathMatch: 'full' },
   { path: 'custom-notices', component: CustomNoticesComponent },
   { path: 'chat', component: ChatComponent },
-  { path: 'contacts', component: ReceiverComponentComponent }
+  { path: 'contacts', component: ReceiverComponentComponent },
+  { path: 'bio', component: ReceiverComponentComponent },
+  { path: 'snatch', component: ReceiverComponentComponent }
+  
 ];
 
 @NgModule({
