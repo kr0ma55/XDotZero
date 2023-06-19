@@ -37,8 +37,4 @@ export class SalutoComponent implements OnInit{
 
   }
 
-
-
-
-
- }
+}
