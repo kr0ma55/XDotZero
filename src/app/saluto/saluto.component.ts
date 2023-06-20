@@ -10,6 +10,11 @@ export class SalutoComponent implements OnInit{
 
   saluto : Object;
 
+  listaVoti :Object[];
+  dataPagellino : String;
+
+  
+
 
 
   ngOnInit(): void {
@@ -20,6 +25,25 @@ export class SalutoComponent implements OnInit{
       "documentStatus": "ROSSO",
       "campo2" :"verde"
     }
+    this.listaVoti = [
+      {
+        "materia" : "Italiano",
+        "voto" : 5,
+        "media" : 5.5
+      },
+      {
+        "materia" : "Inglese",
+        "voto" : 6,
+        "media" : 5.5
+      },
+      {
+        "materia" : "Matematica",
+        "voto" : 7,
+        "media" : 5.5
+      }
+  
+    ]
+    this.dataPagellino = "Dal 01-10-2015";
   
   
   }

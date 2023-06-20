@@ -6,80 +6,29 @@
 
 <div class="container-fluid">
    
-   
-   <div class="row">
-      
-      
-      
-      <div class="col-6">
-            
+   <!-- PRIMA RIGA STATICA -->
+   <div class="row">   
+      <div class="col-6 first-row-col-left">  
       </div>
-
-      <div class="col-6">
-        Dal 01-10-2015
+      <div *ngIf="dataPagellino !== '' " class="col-6 first-row-col-right">
+        {{dataPagellino}}
       </div>
+    </div>
+   <!-- SECONDA RIGA STATICA -->
+      <div class="row">
+          <div class="col-md-6 second-row-col-left">Materia</div>
+          <div class="col-md-2 second-row-col-center">Voti</div>
+          <div class="col-md-4 second-row-col-right">Media</div>
       </div>
-      <div class="container">
-         <div class="row">
-           <div class="col-md-6">Materia</div>
-           <div class="col-md-3">Voti</div>
-            <div class="col-md-3">Media</div>
-         </div>
-         <div class="row">
-           <div class="col-md-6">Italiano</div>
-           <div class="col-md-3">2</div>
-           <div class="col-md-3">7,50</div>
-         </div>
-         <div class="row">
-            <div class="col-md-6">Matematica</div>
-            <div class="col-md-3">3</div>
-            <div class="col-md-3">6,58</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">Scienze</div>
-            <div class="col-md-3">2</div>
-            <div class="col-md-3">8,38</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">Storia</div>
-            <div class="col-md-3">2</div>
-            <div class="col-md-3">8,45</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">Geografia</div>
-            <div class="col-md-3">3</div>
-            <div class="col-md-3">7,50</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">Francese</div>
-            <div class="col-md-3">1</div>
-            <div class="col-md-3">8,85</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">Inglese</div>
-            <div class="col-md-3">1</div>
-            <div class="col-md-3">6,15</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">Musica</div>
-            <div class="col-md-3">1</div>
-            <div class="col-md-3">5,00</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">Educazione Fisica</div>
-            <div class="col-md-3">1</div>
-            <div class="col-md-3">7,00</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">Tecnica</div>
-            <div class="col-md-3">1</div>
-            <div class="col-md-3">8,00</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">Religione</div>
-            <div class="col-md-3">1</div>
-            <div class="col-md-3">8,00</div>
-          </div>
+<!-- N RIGHE DINAMICHE -->
+      <div class="row" *ngFor="let tipoMateria of listaVoti;let i = index">
+          <div  [ngClass]="{'first-value-col': i === 0, 'every-value-col-notFirst' : i !==0}" class="col-md-6 materia-value-col">{{tipoMateria.materia}}</div>
+          <div [ngClass]="{'first-value-col': i === 0,'every-value-col-notFirst' : i !==0}"class="col-md-2">{{tipoMateria.voto}}</div>
+          <div [ngClass]="{'first-value-col': i === 0, 'every-value-col-notFirst' : i !==0}"class="col-md-3">{{tipoMateria.media}}</div>
+          <div class="col-md-1">PROVA</div>
+
+      </div>
+</div>
 
 
 
@@ -93,7 +42,7 @@
 
 
 
-       </div>
+
       
     
  

@@ -3,9 +3,75 @@ p {
     color: blue;
     font-weight: bold;
   }
-  .container-fluid{
-  
+  .first-row-col-left{
+    border-style: solid;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    background-color: #CBFEFEff;
   }  
+  .first-row-col-right{
+    border-style: solid;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    background-color: #CBFEFEff;
+  } 
+
+  .second-row-col-left{
+    border-style: solid;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    background-color: #CBFEFEff;
+  }
+
+  .second-row-col-center{
+    border-style: solid;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    background-color: #CBFEFEff;
+  }
+  .second-row-col-right{
+    border-style: solid;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    background-color: #CBFEFEff;
+  }
+
+  .materia-value-col{
+    border-style: solid;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-bottom-color: grey;
+  }
+
+  .red{
+    background-color: red;
+  }
+
+  .first-value-col{
+    border-style: solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-bottom-width: 0px;
+    border-bottom-color: grey;
+    background-color: red;
+  }
+
+  .every-value-col-notFirst{
+    border-style: solid;
+    border-top-width: 0px;
+    border-top-color: grey;
+    border-bottom-width: 0px;
+    border-bottom-color: grey;
+    background-color: aqua;
+  }
+
+
     
   
  
