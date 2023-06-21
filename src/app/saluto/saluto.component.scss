@@ -46,39 +46,39 @@ p {
 
 
 
-
-#riga_dinamica  div  {
-  // border: solid 1px;
-  background-color: white;
-}
-
 #riga_dinamica   {
-   border: solid 1px;
+  background-color: white;
+  border: solid 0px;
+  border-bottom-width: 0.5px;
+  border-color: #2f2a2a1a;
+}
+#riga_dinamica  div  {
   background-color: white;
 }
+
+// #riga_dinamica   {
+//    border: solid 1px;
+// }
 
 #riga_dinamica #first_col  {
   border: solid 0px;
   border-right-width: 1px;
-  background-color: white;
 }
 
 #riga_dinamica #second_col  {
   border: solid 0px;
   border-left-width: 1px;
   border-right-width: 1px;
-  background-color: white;
+  
 }
 #riga_dinamica #third_col  {
   border: solid 0px;
   border-right-width: 1px;
   border-left-width: 1px;
-  background-color: white;
 }
 #riga_dinamica #fourth_col  {
   border: solid 0px;
   border-left-width: 1px;
-  background-color: white;
 }
     
   
