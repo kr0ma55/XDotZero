@@ -4,29 +4,29 @@
 <label for="fname">BOTTONE</label> -->
 
 
-<div class="container-fluid">
+<div class="container-fluid" >
    
    <!-- PRIMA RIGA STATICA -->
-   <div class="row">   
-      <div class="col-6 first-row-col-left">  
+   <div class="row" id="prima_riga">   
+      <div class="col-6" id="first_col">  
       </div>
-      <div *ngIf="dataPagellino !== '' " class="col-6 first-row-col-right">
+      <div *ngIf="dataPagellino !== '' " class="col-6" id="second_col">
         {{dataPagellino}}
       </div>
     </div>
    <!-- SECONDA RIGA STATICA -->
-      <div class="row">
-          <div class="col-md-6 second-row-col-left" >Materia</div>
-          <div class="col-md-2 second-row-col-center">Voti</div>
-          <div class="col-md-4 second-row-col-right">Media</div>
+      <div class="row" id="seconda_riga">
+          <div id="first_col" class="col-md-6" >Materia</div>
+          <div id="second_col" class="col-md-2">Voti</div>
+          <div id="third_col" class="col-md-4">Media</div>
       </div>
 <!-- N RIGHE DINAMICHE -->
-      <div class="row" *ngFor="let tipoMateria of listaVoti;let i = index">
-          <div  [ngClass]="{'first-value-col': i === 0, 'every-value-col-notFirst' : i !==0}" class="col-md-6 materia-value-col">{{tipoMateria.materia}}</div>
-          <div [ngClass]="{'first-value-col': i === 0,'every-value-col-notFirst' : i !==0}"class="col-md-2">{{tipoMateria.voto}}</div>
-          <div [ngClass]="{'first-value-col': i === 0, 'every-value-col-notFirst' : i !==0}"class="col-md-3">{{tipoMateria.media}}</div>
+      <div class="row" id="riga_dinamica" *ngFor="let tipoMateria of listaVoti;let i = index">
+          <div id="first_col"class="col-md-6">{{tipoMateria.materia}}</div>
+          <div id="second_col"class="col-md-2">{{tipoMateria.voto}}</div>
+          <div id="third_col"class="col-md-3">{{tipoMateria.media}}</div>
           
-          <div class="col-md-1">PROVA</div>
+          <div id="fourth_col"class="col-md-1 first-value-col">PROVA</div>
           
       </div>
 </div>

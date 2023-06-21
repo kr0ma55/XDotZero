@@ -3,88 +3,83 @@ p {
     color: blue;
     font-weight: bold;
   }
-  .first-row-col-left{
-    border-style: solid;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    background-color: #CBFEFEff;
-  }  
-  .first-row-col-right{
-    border-style: solid;
-    border-left-width: 1px;
-    border-bottom-width: 0px;
-    background-color: #CBFEFEff;
-  } 
 
-  .second-row-col-left{
-    border-style: solid;
-    border-right-width: 1px;
-    border-top-width: 1px;
-    border-bottom-width: 0px;
+#prima_riga {
+    border: solid 1px;
+    // border-bottom-width: 0px;
     background-color: #CBFEFEff;
-    text-align: center;
-  }
+}
+#prima_riga #first_col {
+  border: solid 0px;
+  border-right-width: 1px;
+  background-color: #CBFEFEff;
+}
+#prima_riga #second_col {
+  border: solid 0px;
+  border-left-width: 1px;
+  background-color: #CBFEFEff;
+}
 
-  .second-row-col-center{
-    border-style: solid;
-    border-right-width: 1px;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 0px;
-    background-color: #CBFEFEff;
-    text-align: center;
-    
-  }
-  .second-row-col-right{
-    border-style: solid;
-    border-left-width: 0px;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    background-color: #CBFEFEff;
-    text-align: center;
-  }
+#seconda_riga  {
+  border: solid 1px;
+  background-color: #CBFEFEff;
+}
 
-  .materia-value-col{
-    border-style:solid;
-    border-top-width: 1px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 1px;
-    border-bottom-color: grey;
-  }
+#seconda_riga  #first_col  {
+  border: solid 0px;
+  border-right-width: 1px;
+  background-color: #CBFEFEff;
+}
+#seconda_riga  #second_col  {
+  border: solid 0px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  background-color: #CBFEFEff;
+}
+#seconda_riga  #third_col  {
+  border: solid 0px;
+  border-left-width: 1px;
+  background-color: #CBFEFEff;
+}
 
-  .red{
-    background-color: red;
-  }
 
-  .first-value-col{
-    border-style: solid;
-    border-top-width: 1px;
-    border-top-color: black;
-    border-bottom-width: 0px;
-    border-bottom-color: grey;
-    background-color: #CBFEFEff;
-    border-left-width: 0px;
-    border-right-width: 1px;
-  }
 
-  .every-value-col-notFirst{
-    border-style: solid;
-    border-top-width: 0px;
-    border-top-color: grey;
-    border-bottom-width: 0px;
-    border-bottom-color: grey;
-    background-color: #CBFEFEff;
-  }
-  .every-value-col-notFirst{
-    border-style: solid;
-    border-top-width: 1px;
-    border-top-color: black;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    border-right-width: 1px;
-  }
-  
+
+
+
+#riga_dinamica  div  {
+  // border: solid 1px;
+  background-color: white;
+}
+
+#riga_dinamica   {
+   border: solid 1px;
+  background-color: white;
+}
+
+#riga_dinamica #first_col  {
+  border: solid 0px;
+  border-right-width: 1px;
+  background-color: white;
+}
+
+#riga_dinamica #second_col  {
+  border: solid 0px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  background-color: white;
+}
+#riga_dinamica #third_col  {
+  border: solid 0px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  background-color: white;
+}
+#riga_dinamica #fourth_col  {
+  border: solid 0px;
+  border-left-width: 1px;
+  background-color: white;
+}
     
   
  
