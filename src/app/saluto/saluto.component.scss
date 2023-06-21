@@ -5,14 +5,14 @@ p {
   }
   .first-row-col-left{
     border-style: solid;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
     background-color: #CBFEFEff;
   }  
   .first-row-col-right{
     border-style: solid;
     border-left-width: 1px;
-    border-bottom-width: 1px;
+    border-bottom-width: 0px;
     background-color: #CBFEFEff;
   } 
 
@@ -20,8 +20,9 @@ p {
     border-style: solid;
     border-right-width: 1px;
     border-top-width: 1px;
-    border-bottom-width: 1px;
+    border-bottom-width: 0px;
     background-color: #CBFEFEff;
+    text-align: center;
   }
 
   .second-row-col-center{
@@ -29,22 +30,25 @@ p {
     border-right-width: 1px;
     border-top-width: 1px;
     border-bottom-width: 1px;
-    border-left-width: 1px;
+    border-left-width: 0px;
     background-color: #CBFEFEff;
+    text-align: center;
+    
   }
   .second-row-col-right{
     border-style: solid;
-    border-left-width: 1px;
+    border-left-width: 0px;
     border-top-width: 1px;
     border-bottom-width: 1px;
     background-color: #CBFEFEff;
+    text-align: center;
   }
 
   .materia-value-col{
-    border-style: solid;
+    border-style:solid;
     border-top-width: 1px;
-    border-left-width: 1px;
-    border-right-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
     border-bottom-width: 1px;
     border-bottom-color: grey;
   }
@@ -59,7 +63,9 @@ p {
     border-top-color: black;
     border-bottom-width: 0px;
     border-bottom-color: grey;
-    background-color: red;
+    background-color: #CBFEFEff;
+    border-left-width: 0px;
+    border-right-width: 1px;
   }
 
   .every-value-col-notFirst{
@@ -68,10 +74,17 @@ p {
     border-top-color: grey;
     border-bottom-width: 0px;
     border-bottom-color: grey;
-    background-color: aqua;
+    background-color: #CBFEFEff;
   }
-
-
+  .every-value-col-notFirst{
+    border-style: solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 1px;
+  }
+  
     
   
  

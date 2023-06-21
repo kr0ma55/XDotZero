@@ -16,7 +16,7 @@
     </div>
    <!-- SECONDA RIGA STATICA -->
       <div class="row">
-          <div class="col-md-6 second-row-col-left">Materia</div>
+          <div class="col-md-6 second-row-col-left" >Materia</div>
           <div class="col-md-2 second-row-col-center">Voti</div>
           <div class="col-md-4 second-row-col-right">Media</div>
       </div>
@@ -25,8 +25,9 @@
           <div  [ngClass]="{'first-value-col': i === 0, 'every-value-col-notFirst' : i !==0}" class="col-md-6 materia-value-col">{{tipoMateria.materia}}</div>
           <div [ngClass]="{'first-value-col': i === 0,'every-value-col-notFirst' : i !==0}"class="col-md-2">{{tipoMateria.voto}}</div>
           <div [ngClass]="{'first-value-col': i === 0, 'every-value-col-notFirst' : i !==0}"class="col-md-3">{{tipoMateria.media}}</div>
+          
           <div class="col-md-1">PROVA</div>
-
+          
       </div>
 </div>
 

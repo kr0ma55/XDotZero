@@ -32,16 +32,67 @@ export class SalutoComponent implements OnInit{
         "media" : 5.5
       },
       {
-        "materia" : "Inglese",
+        "materia" : "Matematica",
         "voto" : 6,
         "media" : 5.5
       },
       {
-        "materia" : "Matematica",
+        "materia" : "Scienze",
         "voto" : 7,
         "media" : 5.5
+
+      },
+      {
+        "materia" : "Storia",
+        "voto" : 7,
+        "media" : 4.5
+
+      },
+      {
+        "materia" : "Geografia",
+        "voto" : 7,
+        "media" : 6.5
+
+      },
+      {
+        "materia" : "Francese",
+        "voto" : 7,
+        "media" : 6.5
+
+      },
+      {
+        "materia" : "Inglese",
+        "voto" : 7,
+        "media" : 5.5
+
+      },
+      {
+        "materia" : "Musica",
+        "voto" : 7,
+        "media" : 5.5
+
+      },
+      {
+        "materia" : "Educazione Fisica",
+        "voto" : 7,
+        "media" : 6.5
+
+      },
+      {
+        "materia" : "Tecnica",
+        "voto" : 7,
+        "media" : 5.5
+
+      },
+      {
+        "materia" : "Religione",
+        "voto" : 7,
+        "media" : 5.5
+
       }
-  
+    
+    
+    
     ]
     this.dataPagellino = "Dal 01-10-2015";
   
