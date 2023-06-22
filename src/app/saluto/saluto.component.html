@@ -12,6 +12,7 @@
       </div>
       <div *ngIf="dataPagellino !== '' " class="col-6" id="second_col">
         {{dataPagellino}}
+        
       </div>
     </div>
    <!-- SECONDA RIGA STATICA -->
@@ -21,16 +22,22 @@
           <div id="third_col" class="col-md-4">Media</div>
       </div>
 <!-- N RIGHE DINAMICHE -->
-      <div class="row" id="riga_dinamica" *ngFor="let tipoMateria of listaVoti;let i = index">
-          <div id="first_col"class="col-md-6">{{tipoMateria.materia}}</div>
-          <div id="second_col"class="col-md-2">{{tipoMateria.voto}}</div>
-          <div id="third_col"class="col-md-3">{{tipoMateria.media}}</div>
-          
-          <div id="fourth_col"class="col-md-1 first-value-col">PROVA</div>
-          
-      </div>
-</div>
+<ng-container  *ngFor="let tipoMateria of listaVoti; let i = index">
+   <div class="row"[ngClass]="{'first-value-row': i === 0, 'not-first-value-row': i === listaVoti.length -1,'medium-row': i>0 && i<listaVoti.length -1}">
+   
+    <div id="first_col"class="col-md-6">{{tipoMateria.materia}}</div>
+    <div id="second_col"class="col-md-2">{{tipoMateria.voto}}</div>
+    <div id="third_col"class="col-md-3">{{tipoMateria.media}}</div>
+    
+    
+      
+    <div id="fourth_col"class="col-md-1 first-value-col"><button class="view-button" (click)="visualizzaVoto(voto)"></button></div>
 
+   </div>   
+  
+          
+</ng-container>
+</div>
 
 
 
