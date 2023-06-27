@@ -25,18 +25,44 @@
 <ng-container  *ngFor="let tipoMateria of listaVoti; let i = index">
    <div class="row"[ngClass]="{'first-value-row': i === 0, 'not-first-value-row': i === listaVoti.length -1,'medium-row': i>0 && i<listaVoti.length -1}">
    
-    <div id="first_col"class="col-md-6">{{tipoMateria.materia}}</div>
+   
+     <div *ngFor="let key of Object.keys(tipoMateria)">
+      <div class="col">{{ tipoMateria[key] }}</div>
+    </div>
+     
+
+    <!-- <div *ngFor="let item of tipoMateria">
+      <div class="col">
+        <div *ngFor="let attribute in item">{{item[attribute]}}</div>
+      </div>
+    </div> -->
+   
+    <!-- <div *ngFor="let item of tipoMateria | keyvalue">
+      <div class="col">{{item.value}}</div>
+    </div>-->
+    
+    
+   <!-- <div id="first_col"class="col-md-6">{{tipoMateria.materia}}</div> 
     <div id="second_col"class="col-md-2">{{tipoMateria.voto}}</div>
-    <div id="third_col"class="col-md-3">{{tipoMateria.media}}</div>
+    <div id="third_col"class="col-md-3">{{tipoMateria.media}}</div>-->
     
     
       
-    <div id="fourth_col"class="col-md-1 first-value-col"><button class="view-button" (click)="visualizzaVoto(voto)"></button></div>
+    <!--<div id="fourth_col"class="col-md-1 first-value-col"><button class="view-button" (click)="visualizzaVoto(voto)"></button></div>-->
 
    </div>   
   
           
 </ng-container>
+<!--<div class="row">
+   
+  
+  
+  
+    
+  <div id="fourth_col"class="col-md-1"><button class="view-button" (click)="visualizzaVoto(voto)"></button></div>
+
+ </div>-->  
 </div>
 
 
