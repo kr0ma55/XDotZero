@@ -5,14 +5,14 @@
 
 
 <div class="container-fluid" >
-   
+
    <!-- PRIMA RIGA STATICA -->
-   <div class="row" id="prima_riga">   
-      <div class="col-6" id="first_col">  
+   <div class="row" id="prima_riga">
+      <div class="col-6" id="first_col">
       </div>
       <div *ngIf="dataPagellino !== '' " class="col-6" id="second_col">
         {{dataPagellino}}
-        
+
       </div>
     </div>
    <!-- SECONDA RIGA STATICA -->
@@ -24,16 +24,16 @@
 <!-- N RIGHE DINAMICHE -->
 <ng-container  *ngFor="let tipoMateria of listaVoti; let i = index;first as isFirst;last as isLast">
    <div class="row" [ngClass]="{'first-value-row': isFirst, 'not-first-value-row': isLast,'medium-row': !(isLast && isFirst)}">
-   
-  
+
+
    <ng-container *ngFor="let element of tipoMateria | keyvalue">
         <div class="col">{{ element.value }} + '5' +'22'</div>
-    </ng-container> 
+    </ng-container>
 
 
-     
-    </div>   
-       
+
+    </div>
+
 </ng-container>
 </div>
 
@@ -49,7 +49,7 @@
 
 
 
-      
-    
- 
- 
+
+
+
+
