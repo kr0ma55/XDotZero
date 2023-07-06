@@ -11,16 +11,16 @@ export class PaginaFotoEventiComponent implements OnInit,OnDestroy{
   constructor(private istanzaServizioFotoEventi: RecuperoInfoService) { }
   listaCardRetrievedFromServer = [];
   ngOnInit() {
-    console.log('Nasco :' + PaginaFotoEventiComponent.name );
+    //console.log('Nasco :' + PaginaFotoEventiComponent.name );
     this.istanzaServizioFotoEventi.recuperaCardFotoEventi().subscribe((res)=>{
-      this.listaCardRetrievedFromServer = res;
+      this.listaCardRetrievedFromServer = res.default.cardFotoEventiList;
       
       });
     
   }
  
   ngOnDestroy(): void {
-    console.log('Muoio :' + PaginaFotoEventiComponent.name );
+    //console.log('Muoio :' + PaginaFotoEventiComponent.name );
   }
 
 }
