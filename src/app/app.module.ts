@@ -14,6 +14,8 @@ import { PaginaContattiComponent } from './components/pagina-contatti/pagina-con
 import { PaginaFotoEventiComponent } from './components/pagina-foto-eventi/pagina-foto-eventi.component';
 import { PaginaHomeComponent } from './components/pagina-home/pagina-home.component';
 import { SalutoComponent } from './components/saluto/saluto.component';
+import { FotoEventiCardComponent } from './components/foto-eventi-card/foto-eventi-card.component';
+
 
 
 
@@ -27,7 +29,8 @@ import { SalutoComponent } from './components/saluto/saluto.component';
     CustomFooterSonComponent,
     PaginaContattiComponent,
     PaginaFotoEventiComponent,
-    PaginaHomeComponent
+    PaginaHomeComponent,
+    FotoEventiCardComponent
   ],
   imports: [
     BrowserModule,

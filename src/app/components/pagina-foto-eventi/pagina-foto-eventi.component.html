@@ -1,15 +1,9 @@
 <div class="container-fluid p-0 card-container">
-    <div class="row row-card">
-<!-- GESTIONE CARD LISTA NG FOR -->
-        <div *ngFor="let card of listaCardRetrievedFromServer;" class="col card">
-            <div class="card" >
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">{{card.card_title}}</h5>
-                  <p class="card-text">{{card.card_text}}</p>
-                  
-                </div>
-              </div>
-        </div>
+  <div class="row row-card">
+    <!-- GESTIONE LISTA DI COMPONENTI CARD NG FOR -->
+    <div class="col" *ngFor="let card of listaCardRetrievedFromServer;">
+      <app-foto-eventi-card [testo]="card.card_text" [titolo]="card.card_title" (mettiAnsiaAllUtente)="scatenaAnsia($event)" ></app-foto-eventi-card>
     </div>
+    
+  </div>
 </div>
