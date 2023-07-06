@@ -16,13 +16,13 @@
       </div>
     </div>
    <!-- SECONDA RIGA STATICA -->
-      <div class="row" id="seconda_riga">
+      <!-- <div class="row" id="seconda_riga">
           <div id="first_col" class="col-md-6" >Materia</div>
           <div id="second_col" class="col-md-2">Voti</div>
           <div id="third_col" class="col-md-4">Media</div>
-      </div>
+      </div> -->
 <!-- N RIGHE DINAMICHE -->
-<ng-container  *ngFor="let tipoMateria of listaVoti; let i = index;first as isFirst;last as isLast">
+<!-- <ng-container  *ngFor="let tipoMateria of listaVoti; let i = index;first as isFirst;last as isLast">
    <div class="row" [ngClass]="{'first-value-row': isFirst, 'not-first-value-row': isLast,'medium-row': !(isLast && isFirst)}">
 
 
@@ -34,7 +34,13 @@
 
     </div>
 
-</ng-container>
+</ng-container> -->
+
+<div class="row" *ngFor="let praticante of listaPraticanti;">
+   <div class="col-6">{{ praticante.nickName }}</div>
+   <div class="col-6">{{ praticante.colore }}</div>
+   
+</div>
 </div>
 
 
