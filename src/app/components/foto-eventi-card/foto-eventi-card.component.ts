@@ -12,9 +12,11 @@ export class FotoEventiCardComponent implements OnInit,OnDestroy {
   @Input() titolo;
   @Input() testo;
   @Output() mettiAnsiaAllUtente = new EventEmitter<string>();
+  userName: string;
   nuovoCiaMondo : CiaoMondo;
   nuovoUniverso : Universo;
   listaPianeti : Pianeta[];
+  erroreParolaProibita:boolean;
 
   numeroComponente :number  =5678;
   constructor() { }
@@ -48,6 +50,15 @@ export class FotoEventiCardComponent implements OnInit,OnDestroy {
 
     this.listaPianeti = this.nuovoUniverso.ottieniPianeti();
     
+  }
+
+
+  intercetta(){
+   if(this.userName.toUpperCase().indexOf('PIPPO') !== -1 ){
+      this.erroreParolaProibita = true;
+   } else {
+    this.erroreParolaProibita = false;
+   }
   }
 
 }

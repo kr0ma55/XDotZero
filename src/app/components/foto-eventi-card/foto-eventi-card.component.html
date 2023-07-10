@@ -5,6 +5,8 @@
             <h5 class="card-title">{{titolo}}</h5>
             <p class="card-text">{{testo}}</p>
             
-            <a class="btn btn-primary" (click)="comunicaAnsia()">Infondi Ansia</a>
+            
+            <input type="text" [(ngModel)]="userName" (ngModelChange)="intercetta()" ><br/>
+            <div *ngIf="erroreParolaProibita" [style.color]="'red'">PAROLA PROIBITA {{username}} TROVATA</div>
         </div>
     </div>
